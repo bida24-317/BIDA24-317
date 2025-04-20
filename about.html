@@ -3,48 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Sweet Delights Bakery</title>
+    <title>About Us | Delightful Bakery</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Same header as index.html -->
+    <!-- Header (Same as Homepage) -->
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Delightful Bakery" width="180">
+            </a>
+            <nav class="main-nav">
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="about-banner">
+    <!-- About Banner -->
+    <section class="page-banner">
+        <div class="container">
             <h1>Our Story</h1>
-        </section>
+            <p>Traditional baking since 2020</p>
+        </div>
+    </section>
 
-        <section class="about-content">
-            <div class="container">
-                <div class="about-text">
-                    <h2>From Small Kitchen to Bakery</h2>
-                    <p>Founded in 2020 by Katlego Chose</p>
-                </div>
-                <div class="about-image">
-                    <img src="assets/images/bakery-interior.webp" alt="Our bakery interior" loading="lazy">
-                </div>
-            </div>
-        </section>
-
-        <section class="team">
-            <h2>Meet Our Team</h2>
-            <div class="team-members">
-                <div class="member">
-                    <img src="assets/images/baker-1.webp" alt="Head Baker" loading="lazy">
-                    <h3>Olorato Mosimane</h3>
-                    <p>Peo Seiponi</p>
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <div class="story-content">
+                <h2 class="section-title">From Humble Beginnings</h2>
+                <p>Founded in a small home kitchen by Katlego Chose, Delightful Bakery began with just one oven and a dream to bring authentic artisan baking to our community.</p>
+                <p>Today, we still use Anna's original sourdough starter (nicknamed "Doughlene") in all our breads, maintaining the same commitment to quality that won us our first loyal customers.</p>
+                <div class="signature">
+                    <img src="assets/images/signature.png" alt="Katlego's Signature" width="150">
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="story-image">
+                <img src="assets/images/founder.jpg" alt="Our Founder" loading="lazy">
+            </div>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Our Values -->
+    <section class="our-values">
+        <div class="container">
+            <h2 class="section-title">Our Baking Philosophy</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-wheat-alt"></i>
+                    </div>
+                    <h3>Quality Ingredients</h3>
+                    <p>We source organic flour, free-range eggs, and European butter for every recipe</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Traditional Timing</h3>
+                    <p>Our sourdough ferments for 24+ hours to develop perfect flavor</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Made with Love</h3>
+                    <p>Every item is handcrafted by our passionate baking team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="our-team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Bakers</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/baker-1.jpg" alt="Head Baker" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Katlego Chose</h3>
+                        <p class="position">Head Baker & Founder</p>
+                        <p class="bio"> Katlego brings 20 years of expertise to every recipe.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="assets/images/baker-2.jpg" alt="Pastry Chef" loading="lazy">
+                    </div>
+                    <div class="member-info">
+                        <h3>Olorato Mosimane</h3>
+                        <p class="position">Pastry Chef</p>
+                        <p class="bio">Specializes in French patisserie and our famous croissants.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Homepage) -->
+    <footer class="main-footer">
         <!-- Same footer as index.html -->
     </footer>
 
-    <script src="js/script.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
